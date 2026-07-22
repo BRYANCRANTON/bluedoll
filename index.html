@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snuff Bio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Embed Do DC -->
+    <meta content="Snuff Bio" property="og:title" />
+    <meta content="Bio Site Of @MrSnuff" property="og:description" />
+    <meta content="localhost" property="og:url" />
+    <meta content="https://i.postimg.cc/Vkbnwdtp/IMG-20250105-141147-084.jpg" property="og:image" />
+    <meta content="#000000" data-react-helmet="true" name="theme-color" />
+
+    <style>
+        /* General styles */
+  
+    </style>
+</head>
+<body>
+    <!-- Background Video -->
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="HMMDEVIL.mp4" type="video/mp4" />
+        </video>
+        <!-- Background Music -->
+        <audio id="bgMusic" loop>
+            <source src="HMMDEVIL.mp4" type="audio/mpeg" />
+        </audio>
+    </div>
+
+    <!-- Content Section -->
+    <div class="caption">
+        <div class="card-container">
+            <div class="card">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="https://i.imgur.com/2pNjrKj.jpeg" alt="Logo">
+                </div>
+                <!-- Name -->
+                <div class="nick">BLUE DOLL ESCORT</div>
+                <!-- Links -->
+                <div class="icon-links">
+                    <a href="http://localhost:2435/storage/emulated/0/Download/index.html" target="_blank"><i class="fab fa-telegram"></i></a>
+
+
+
+
+
+
+                       <a href="https://comfy-cobbler-bd59b6.netlify.app/" class="hover-button">VISIT SITE </a>
+
+<style>
+.hover-button {
+  display: inline-block;
+  padding: 12px 16px;
+  background-color: #ff69b4; /* Base Pink */
+  color: #ffffff;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 30px; /* Rounded pill style */
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+  transition: all 0.3s ease; /* Smoothly animates all changes */
+}
+
+/* Hover effects happen here */
+.hover-button:hover {
+  background-color: #ff1493; /* Darker pink */
+  transform: translateY(-3px); /* Moves upward slightly */
+  box-shadow: 0 8px 20px rgba(255, 20, 147, 0.5); /* Deepens shadow */
+}
+
+/* Optional active click effect */
+.hover-button:active {
+  transform: translateY(-1px);
+}
+</style> 
+                    
+                    
+                    
+                    
+                </div>
+                <!-- Song Card -->
+                <div class="song-card">
+                    <div class="song-cover">
+                        <img src="https://i.imgur.com/2pNjrKj.jpeg" alt="Okładka">
+                    </div>
+                    <div class="song-info">
+                        <div class="song-title">BLUE DOLL</div>
+                        <div class="song-author">GET LUCKY TONIGHT</div>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </div>h
+
+    <!-- Audio Control Button -->
+    <div class="audio-control" id="audioControl">
+        <div class="audio-icon" id="audioIcon"><i class="fas fa-volume-mute"></i></div>
+        <div class="audio-text" id="audioText">Tap To Play Music</div>
+    </div>
+
+    <script>
+        const bgMusic = document.getElementById('bgMusic');
+        const audioControl = document.getElementById('audioControl');
+        const audioIcon = document.getElementById('audioIcon');
+        const audioText = document.getElementById('audioText');
+
+        let isPlaying = false;
+
+        // Function to toggle audio play/pause
+        function toggleAudio() {
+            if (isPlaying) {
+                bgMusic.pause();
+                audioIcon.innerHTML = '<i class="fas fa-volume-mute"></i>';
+            } else {
+                bgMusic.play();
+                audioIcon.innerHTML = '<i class="fas fa-volume-up"></i>';
+            }
+            isPlaying = !isPlaying;
+        }
+
+        // Function to animate text
+        function animateText() {
+            audioText.classList.add('active');
+            setTimeout(() => {
+                audioText.classList.remove('active');
+            }, 1000);
+
+            // Repeat animation every 5 seconds
+            setTimeout(animateText, 5000);
+        }
+
+        // Initial call to animate text
+        animateText();
+
+        // Add click event listener to toggle audio
+        audioControl.addEventListener('click', toggleAudio);
+    </script>
+</body>
+</html>
